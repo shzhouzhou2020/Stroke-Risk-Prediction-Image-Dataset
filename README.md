@@ -1,2 +1,4 @@
-# GIT_LOCAL
- GIT LOCAL
+# Dataset usage instructions
+The YFP database collects 32 video clips of 22 patients with facial paralysis on YouTube, converts the videos into 6FPS image sequences, and then manually labels the images by three independent facial paralysis clinicians. The Computer Vision Laboratory of the University of Massachusetts Amherst compiles the LFW face database. The LFW database has a total of 13,233 face images, with a total of 5,749 people, and the size of each image is 250*250.
+In the experiment, we use the YFP data set as a positive sample and the LFW data set as a negative sample. In the YFP data set, we randomly selected 150 different images from the image set of 22 people and obtained a total of 3300 positive sample images. We randomly selected images of 3,300 people in the LFW data set and obtained 3,300 negative sample images.
+After we expanded the sample data set using the data augmentation method described in this article, the number of samples of each type reached 52,800. We randomly selected 20,000 images from 52,800 images of various types. We divided them into the verification set and the test set at a ratio of 1:1, and the remaining 32,800 images were used as the training set.
